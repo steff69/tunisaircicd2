@@ -12,7 +12,8 @@ steps:
   inputs:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: /usr/lib/jvm/java-8-openjdk"
   displayName: 'Install JDK 8'
 
 - task: Gradle@3
