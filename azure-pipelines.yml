@@ -5,11 +5,11 @@ pool:
   name: Agentpool    
   demands:
     - agent.name -equals agentjdid
-
 steps:
-
-- script: chmod +x ./gradlew
-  displayName: 'Grant execute permissions to Gradle wrapper'
+- script: |
+    export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+    chmod +x ./gradlew
+  displayName: 'Set JAVA_HOME to Java 11 and Grant execute permissions to Gradle wrapper'
 
 - task: Gradle@3
   inputs:
