@@ -8,18 +8,15 @@ pool:
 
 steps:
 
-- script: |
-    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-    chmod +x ./gradlew
-  displayName: 'Set JAVA_HOME and Grant execute permissions to Gradle wrapper'
+- script: chmod +x ./gradlew
+  displayName: 'Grant execute permissions to Gradle wrapper'
 
 - task: Gradle@3
   inputs:
     wrapperScript: 'gradlew'
     tasks: 'build'
-    options: '-x test'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    javaHomeOption: 'Path'
+    jdkDirectory: '$(JAVA_HOME)'
     workingDirectory: ''
     gradleOptions: ''
     sonarQubeRunAnalysis: false
@@ -29,8 +26,8 @@ steps:
   inputs:
     wrapperScript: 'gradlew'
     tasks: 'test'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    javaHomeOption: 'Path'
+    jdkDirectory: '$(JAVA_HOME)'
     workingDirectory: ''
     gradleOptions: ''
     sonarQubeRunAnalysis: false
