@@ -7,14 +7,6 @@ pool:
     - agent.name -equals agentjdid
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'Preinstalled'
-  displayName: 'Install JDK 8'
-- script: chmod +x ./gradlew
-  displayName: 'Grant execute permissions to Gradle wrapper'
 
 - task: Gradle@3
   inputs:
