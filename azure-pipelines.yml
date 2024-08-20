@@ -8,13 +8,10 @@ pool:
 
 steps:
 
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'LocalDirectory'
-    jdkFile: /usr/lib/jvm/java-8-openjdk"
-  displayName: 'Install JDK 8'
+- script: |
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    chmod +x ./gradlew
+  displayName: 'Set JAVA_HOME and Grant execute permissions to Gradle wrapper'
 
 - task: Gradle@3
   inputs:
