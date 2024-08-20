@@ -2,6 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -17,10 +18,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="46dp"
         android:layout_marginTop="280dp"
-        android:fontFamily="Inter"
         android:textColor="@color/white"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/tvRoute"
@@ -30,8 +31,9 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="-138dp"
         android:textColor="@color/white"
-        android:textSize="75px"
-        android:textStyle="bold" />
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/tvDate"
@@ -42,8 +44,9 @@
         android:layout_marginTop="2dp"
         android:alpha="0.75"
         android:textColor="@color/white"
-        android:textSize="40px"
-        android:textStyle="bold" />
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/tvDeparture"
@@ -66,8 +69,9 @@
         android:layout_marginTop="146dp"
         android:fontFamily="Inter"
         android:textColor="@color/white"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/btnBack"
@@ -77,9 +81,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="234dp"
         android:backgroundTint="#B5E77E"
-        android:text="Download Ticket"
+        android:text="@string/download_ticket"
         android:textColor="#555D4F"
-        android:textSize="48px"
+        android:textSize="48sp"
         android:textStyle="bold" />
 
 
@@ -94,8 +98,9 @@
         android:alpha="0"
         android:text=""
         android:textColor="#555D4F"
-        android:textSize="60px"
-        android:textStyle="bold" />
+        android:textSize="60sp"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
 
 
 </LinearLayout>

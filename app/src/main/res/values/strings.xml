@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">fly</string>
     <string name="select_ticket_type">Select a ticket type</string>
+    <string name="download_ticket">Download Ticket</string>
+    <string name="my_bookings">My bookings</string>
+    <string name="book_your_ticket">Book Your Ticket</string>
 </resources>

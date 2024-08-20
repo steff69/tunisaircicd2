@@ -13,10 +13,9 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My bookings"
+        android:text="@string/my_bookings"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="Inter"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -37,7 +36,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="34dp"
         android:backgroundTint="#B5E77E"
-        android:text="Book Your Ticket"
+        android:text="@string/book_your_ticket"
         android:textColor="#555D4F"
         android:textStyle="bold" />
 
