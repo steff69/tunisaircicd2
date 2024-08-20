@@ -12,7 +12,7 @@ steps:
 
 - script: |
      chmod +x ./gradlew
-  displayName: 'Set JAVA_HOME to Java 11 and Grant execute permissions to Gradle wrapper'
+  displayName: ' execute permissions to Gradle wrapper'
 
 - task: Gradle@3
   inputs:
