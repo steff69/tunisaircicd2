@@ -7,14 +7,14 @@ pool:
     - agent.name -equals agentjdid
 
 steps:
-- script: |
-    mkdir -p "$HOME/android-sdk/cmdline-tools/latest"
-    export ANDROID_HOME="$HOME/android-sdk"
-    curl -o sdk-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip
-    unzip sdk-tools.zip -d "$ANDROID_HOME/cmdline-tools/latest"
-    export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
-    yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$ANDROID_HOME" "platforms;android-30" "build-tools;30.0.3" "platform-tools"
-  displayName: 'Install Android SDK'
+#- script: |
+ #   mkdir -p "$HOME/android-sdk/cmdline-tools/latest"
+ #   export ANDROID_HOME="$HOME/android-sdk"
+ #   curl -o sdk-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip
+#    unzip sdk-tools.zip -d "$ANDROID_HOME/cmdline-tools/latest"
+#    export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+#    yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$ANDROID_HOME" "platforms;android-30" "build-tools;30.0.3" "platform-tools"
+#  displayName: 'Install Android SDK'
 
 - script: chmod +x ./gradlew
   displayName: 'Grant execute permissions to Gradle wrapper'
