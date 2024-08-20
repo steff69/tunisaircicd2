@@ -8,6 +8,8 @@ pool:
 
 steps:
 
+
+
 - task: Gradle@3
   inputs:
     wrapperScript: 'gradlew'
