@@ -14,5 +14,5 @@ steps:
   inputs:
     target: 'apk'
     projectDirectory: './'
-    flutterDirectory: '../'
+    flutterDirectory: '../flutter/bin'
 
