@@ -5,8 +5,7 @@ pool:
   name: Agentpool
   demands:
     - agent.name -equals agentn
-  clean: true
-  
+  clean : false
 steps:
 
 - task: FlutterBuild@0  
