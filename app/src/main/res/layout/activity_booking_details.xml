@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,7 @@
     android:background="@drawable/details_background">
 
 
-    <!-- Добавьте другие элементы пользовательского интерфейса для отображения деталей бронирования -->
+    <!--  -->
     <TextView
         android:id="@+id/tvPassengerName"
         android:layout_width="161dp"
@@ -35,18 +34,7 @@
         android:textStyle="bold"
         tools:ignore="RtlHardcoded" />
 
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="2dp"
-        android:alpha="0.75"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        tools:ignore="RtlHardcoded" />
+
 
     <TextView
         android:id="@+id/tvDeparture"
@@ -73,34 +61,33 @@
         android:textStyle="normal"
         tools:ignore="RtlHardcoded" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="320dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="234dp"
-        android:backgroundTint="#B5E77E"
-        android:text="@string/download_ticket"
-        android:textColor="#555D4F"
-        android:textSize="48sp"
-        android:textStyle="bold" />
+    <!-- <Button
+         android:id="@+id/btnBack"
+         android:layout_width="320dp"
+         android:layout_height="48dp"
+         android:layout_gravity="center"
+         android:layout_marginStart="0dp"
+         android:layout_marginTop="234dp"
+         android:backgroundTint="#B5E77E"
+         android:text="@string/download_ticket"
+         android:textColor="#555D4F"
+         android:textSize="48sp"
+         android:textStyle="bold" /> -->
+
+    <!--<Button
+         android:id="@+id/btnBackAdditional"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_gravity="left"
+         android:layout_marginStart="-6dp"
+         android:layout_marginTop="-696dp"
+         android:backgroundTint="#7563F6"
+         android:alpha="0"
+         android:text=""
+         android:textColor="#555D4F"
+         android:textSize="60sp"
+         android:textStyle="bold"
+         tools:ignore="RtlHardcoded" /> -->
 
 
-    <Button
-        android:id="@+id/btnBackAdditional"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="-6dp"
-        android:layout_marginTop="-696dp"
-        android:backgroundTint="#7563F6"
-        android:alpha="0"
-        android:text=""
-        android:textColor="#555D4F"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        tools:ignore="RtlHardcoded" />
-
-
-</LinearLayout>
+ </LinearLayout>

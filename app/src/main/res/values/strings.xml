@@ -4,4 +4,10 @@
     <string name="download_ticket">Download Ticket</string>
     <string name="my_bookings">My bookings</string>
     <string name="book_your_ticket">Book Your Ticket</string>
+    <string name="buy_ticket">Buy Ticket</string>
+    <string name="enter_your_destination">Enter your destination</string>
+    <string name="select_a_date">Select a date</string>
+    <string name="select_a_datex">Select a date</string>
+    <string name="enter_the_place_of_departure">Enter the place of departure</string>
+    <string name="enter_your_name">Enter your name</string>
 </resources>

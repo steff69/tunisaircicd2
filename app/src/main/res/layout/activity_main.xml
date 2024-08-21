@@ -17,12 +17,15 @@
         android:layout_gravity="left"
         android:layout_marginStart="37dp"
         android:layout_marginTop="177dp"
+        android:autofillHints=""
         android:fontFamily="Inter"
-        android:hint="Enter your name"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="#4E4F54"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/etDeparture"
@@ -31,12 +34,15 @@
         android:layout_gravity="left"
         android:layout_marginStart="37dp"
         android:layout_marginTop="21dp"
+        android:autofillHints=""
         android:fontFamily="Inter"
-        android:hint="Enter the place of departure"
+        android:hint="@string/enter_the_place_of_departure"
+        android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="#4E4F54"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/etDestination"
@@ -45,52 +51,57 @@
         android:layout_gravity="left"
         android:layout_marginStart="37dp"
         android:layout_marginTop="21dp"
-        android:fontFamily="Inter"
-        android:hint="Enter your destination"
+        android:autofillHints="" android:fontFamily="Inter"
+        android:hint="@string/enter_your_destination"
+        android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="#4E4F54"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
 
     <EditText
         android:id="@+id/etDate"
+        android:autofillHints=""
+        android:inputType="text"
+
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_marginStart="37dp"
         android:layout_marginTop="21dp"
-        android:clickable="true"
         android:focusable="false"
         android:fontFamily="Inter"
-        android:hint="Select a date"
+        android:hint="@string/select_a_date"
         android:textColor="@color/white"
         android:textColorHint="#4E4F54"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded,TextFields" />
 
     <Spinner
         android:id="@+id/spinnerTicketType"
         android:layout_width="140dp"
-        android:layout_height="42dp"
+        android:layout_height="50dp"
         android:layout_gravity="left"
         android:layout_marginStart="196dp"
         android:layout_marginTop="-40dp"
         android:backgroundTint="#4E4F54"
-        android:clickable="true"
         android:entries="@array/ticket_types"
         android:focusable="false"
         android:fontFamily="Inter"
-        android:hint="Select a date"
+        android:hint="@string/select_a_datex"
         android:prompt="@string/select_ticket_type"
         android:textColor="#FFFFFF"
-        android:textSize="48px"
-        android:textStyle="normal" />
+        android:textSize="48sp"
+        android:textStyle="normal"
+        tools:ignore="RtlHardcoded" />
 
     <ToggleButton
         android:id="@+id/toggleBaggage"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/toggle_btn_bg"
@@ -110,14 +121,14 @@
         android:visibility="gone"
         android:layout_gravity="left"
         android:fontFamily="Inter"
-        android:textSize="48px"
+        android:textSize="48sp"
         android:textStyle="bold"
-        />
+        tools:ignore="RtlHardcoded" />
 
 
     <Button
         android:id="@+id/btnBookTicket"
-        android:text="Buy Ticket"
+        android:text="@string/buy_ticket"
         android:layout_width="320dp"
         android:layout_height="64dp"
         android:layout_gravity="center"
@@ -125,7 +136,7 @@
         android:layout_marginTop="19dp"
         android:backgroundTint="#B5E77E"
         android:textColor="#555D4F"
-        android:textSize="48px"
+        android:textSize="48sp"
         android:textStyle="bold"/>
 
 </LinearLayout>
