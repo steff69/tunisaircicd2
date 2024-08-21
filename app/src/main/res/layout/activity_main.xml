@@ -126,18 +126,7 @@
         tools:ignore="RtlHardcoded" />
 
 
-    <Button
-        android:id="@+id/btnBookTicket"
-        android:text="@string/buy_ticket"
-        android:layout_width="320dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="19dp"
-        android:backgroundTint="#B5E77E"
-        android:textColor="#555D4F"
-        android:textSize="48sp"
-        android:textStyle="bold"/>
+
 
 </LinearLayout>
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -63,20 +64,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="-4dp"
         android:backgroundTint="#2A2B31"
-        android:text="Delete"
-        android:textColor="#CBCBCD" />
+        android:text="@string/delete"
+        android:textColor="#CBCBCD"
+        tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btnBookingDetails"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="-50dp"
-        android:backgroundTint="#7563F6"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
-        android:text="Details"
-        android:textColor="#DCD9FA" />
+
+
 
 
 </LinearLayout>

@@ -10,4 +10,10 @@
     <string name="select_a_datex">Select a date</string>
     <string name="enter_the_place_of_departure">Enter the place of departure</string>
     <string name="enter_your_name">Enter your name</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="ok">Ok</string>
+    <string name="please_enter_all_details_for_your_booking">Please enter all details for your booking</string>
+    <string name="okk">Ok</string>
+    <string name="your_ticket_successfully_booked">Your ticket successfully booked</string>
 </resources>
