@@ -1,0 +1,12 @@
+trigger:
+- none
+
+pool:
+  name: Agentpool    
+  demands:
+    - agent.name -equals agentn
+  
+steps:
+- task: FlutterBuild@0  
+  inputs:
+    target: 'apk'
