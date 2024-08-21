@@ -2,9 +2,10 @@ trigger:
 - none
 
 pool:
-  name: Agentpool    
+  name: Agentpool
   demands:
     - agent.name -equals agentn
+  clean: true
   
 steps:
 
