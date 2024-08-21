@@ -6,7 +6,18 @@ pool:
   demands:
     - agent.name -equals agentn
   clean : false
+
+
 steps:
+
+
+- script: |
+   echo "Current working directory is:"
+   pwd
+   displayName: 'Print Working Directory'
+
+
+
 
 - task: FlutterBuild@0  
   inputs:
