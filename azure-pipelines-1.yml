@@ -14,7 +14,7 @@ steps:
 - script: |
    echo "Current working directory is:"
    pwd
-   displayName: 'Print Working Directory'
+  displayName: 'Print Working Directory'
 
 
 
