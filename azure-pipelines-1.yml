@@ -14,5 +14,5 @@ steps:
   inputs:
     target: 'apk'
     projectDirectory: './'
-    flutterDirectory: './home/azureuser/myagent/_work/2/flutter'
+    flutterDirectory: '../'
 
