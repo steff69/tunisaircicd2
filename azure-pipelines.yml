@@ -7,19 +7,6 @@ pool:
     - agent.name -equals agentjdid
   
 steps:
-  - script: |
-      # Installer les dépendances nécessaires
-      sudo apt-get update
-      sudo apt-get install -y git unzip xz-utils zip libglu1-mesa
-
-      # Télécharger et installer Flutter
-      git clone https://github.com/flutter/flutter.git -b stable --depth 1
-      echo "::add-path::$(pwd)/flutter/bin"
-
-      # Vérifier l'installation
-      flutter doctor
-    displayName: 'Installer Flutter'
-
-  - script: |
-      flutter build apk --release
-    displayName: 'Construire l''application Flutter'
+- task: FlutterInstall@0
+  inputs:
+    version: 'latest'
