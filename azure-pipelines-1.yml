@@ -13,6 +13,6 @@ steps:
 - task: FlutterBuild@0
   inputs:
     target: 'apk'
-    projectDirectory: './home/azureuser/myagent/_work/2/s'
+    projectDirectory: './'
     flutterDirectory: './home/azureuser/myagent/_work/2/flutter'
 
