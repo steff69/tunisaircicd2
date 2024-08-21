@@ -7,10 +7,7 @@ pool:
     - agent.name -equals agentn
   
 steps:
-- script: |
-    sudo apt-get update
-    sudo apt-get install -y lib32stdc++6 lib32z1
-    git clone https://github.com/flutter/flutter.git -b stable
-    echo "##vso[task.prependpath]$(pwd)/flutter/bin"
-    flutter --version
-  displayName: 'Install Flutter SDK'
+
+- task: FlutterBuild@0  
+  inputs:
+    target: 'apk'
